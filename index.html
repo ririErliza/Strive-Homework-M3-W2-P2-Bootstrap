@@ -8,52 +8,63 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
     <title>Honest Travel Agency</title>
 
    <style>
        h5{
            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
        }
+
    </style>
   </head>
   <body>
 
     <!-- nav -->
-    <div class="nav d-flex justify-content-between align-items-center border-bottom">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+        <img src="asset\honest-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Honest Travel Agency
+        </a>
 
-      
-        <ul class="nav nav-pills">
-            <li class="nav-item">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
                 <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Deals</a>
-                <div class="dropdown-menu">
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Deals
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Deals of the week</a>
                     <a class="dropdown-item" href="#">Welcome summer!</a>
                     <a class="dropdown-item" href="#">Deal of the day</a>
                     <a class="dropdown-item" href="#">Last Minute</a>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
+              </li>
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+          </div>
 
-        <div>
-            <h5 class="mt-2 lead">Honest Travel Agency</h5>
-           
-        </div>
-
-        <div>
-            
-            <img src="asset\honestlogo2.png" class="d-block w-100" style="height:10vh ; object-fit: cover" alt="honest travel logo">
-        </div>
-    </div>
+    </nav>
 
     <!-- container -->
 
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
         <div class="jumbotron">
             <div class="container">
                 <h1 class="display-4 text-primary">Travel in ease and peace with us</h1>
@@ -62,62 +73,68 @@
         </div>
 
         <!-- deals of the week -->
-        <h2 class="bg-secondary text-white mt-5">Deals of the week</h2>
+        <div class="bg-secondary text-white mt-5 d-flex justify-content-between">
+            <h2 class="ml-3" >Deals of the week</h2>
+            <h2 class="mr-3">-</h2>
+        </div>
+        
 
-        <div class="row">
+        <div class="row mt-5">
 
             <div class="col-6 col-xl-3">
                 <div class="card mb-4 shadow-sm">
                     <img src="asset\SK.jpg" class="card-img-top" alt="South Korea">
-
                     <div class="card-body">
-                        <p class="card-text">South Korea</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <small class="text-muted">Something</small>
-                        </div>
+                        <h5 class="card-title">South Korea</h5>
+                        <!-- <small class="text-muted">Something</small> -->
+                        <button type="button" class="btn btn-outline-secondary mt-2 mx-auto">
+                            Details
+                        </button>
                     </div>
+
+                    
                 </div>
             </div>
 
             <div class="col-6 col-xl-3">
                 <div class="card mb-4 shadow-sm">
                     <img src="asset\norway.jpg" class="card-img-top" alt="norway">
-
                     <div class="card-body">
-                        <p class="card-text">Norway</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                
-                            <small class="text-muted">Something</small>
-                        </div>
+                        <h5 class="card-title">Norway</h5>
+                        <!-- <small class="text-muted">Something</small> -->
+                        <button type="button" class="btn btn-outline-secondary mt-2 mx-auto">
+                            Details
+                        </button>
                     </div>
+
                 </div>
             </div>
 
             <div class="col-6 col-xl-3">
                 <div class="card mb-4 shadow-sm">
                     <img src="asset\NZ.jpg" class="card-img-top" alt="New Zealand">
-
                     <div class="card-body">
-                        <p class="card-text"> New Zealand </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                
-                            <small class="text-muted">Something</small>
-                        </div>
+                        <h5 class="card-title">New Zealand</h5>
+                        <!-- <small class="text-muted">Something</small> -->
+                        <button type="button" class="btn btn-outline-secondary mt-2 mx-auto">
+                            Details
+                        </button>
                     </div>
+
                 </div>
             </div>
 
             <div class="col-6 col-xl-3">
                 <div class="card mb-4 shadow-sm">
                     <img src="asset\kyoto.jpg" class="card-img-top" alt="Japan">
-
                     <div class="card-body">
-                        <p class="card-text"> Japan </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                
-                            <small class="text-muted">Something</small>
-                        </div>
+                        <h5 class="card-title">Japan</h5>
+                        <!-- <small class="text-muted">Something</small> -->
+                        <button type="button" class="btn btn-outline-secondary mt-2 mx-auto">
+                            Details
+                        </button>
                     </div>
+
                 </div>
             </div>
 
@@ -127,8 +144,12 @@
 
 
         <!-- welcome summer -->
-        <h2 class="bg-secondary text-white mt-5">Welcome Summer!</h2>
-        <div class="row ">
+        <div class="bg-secondary text-white mt-5 d-flex justify-content-between">
+            <h2 class="ml-3" >Welcome Summer!</h2>
+            <h2 class="mr-3">-</h2>
+        </div>
+        
+        <div class="row mt-5">
             <div class="col-6 col-lg-2">
                 <div class="card h-100">
                     <img src="https://www.libertytravel.com/sites/default/files/styles/full_size/public/LG5516.2%20LT%20WebB_Mex2.jpg?itok=H5mGn3bA" class="card-img-top" alt="Cancun">
@@ -186,14 +207,17 @@
         </div>
 
         <!-- deals of the day -->
+        <div class="bg-secondary text-white mt-5 d-flex justify-content-between">
+            <h2 class="ml-3" >Deals of the day</h2>
+            <h2 class="mr-3">-</h2>
+        </div>
 
-        <h2 class="bg-secondary text-white mt-5">Deals of the day</h2>
         <div class="row mt-5">
             <div class="col-12 col-lg-9">
                 <img src="https://www.urlaubstracker.at/wp-content/uploads/2019/08/lombok-vulkan-rinjani-krater.jpg" alt="lombok/rinjani"
                     class="img-fluid w-100 mb-4 mb-sm-0 mt-sm-4 mt-lg-0">
             </div>
-            <div class="col-12 col-lg-3 text-sm-center text-lg-right text-xl-left">
+            <div class="col-12 col-lg-3 text-sm-center text-lg-left">
                 <div>
                     <h1>Lombok</h1>
                     <p>Want to book a vacation to Lombok? Whether you're off for a romantic vacation, family trip, or an all-inclusive holiday, Lombok vacation packages on us make planning your trip simple and affordable.</p>
@@ -208,9 +232,12 @@
 
 
         <!-- Last Minute -->
+        <div class="bg-secondary text-white mt-5 d-flex justify-content-between">
+            <h2 class="ml-3" >Last Minute</h2>
+            <h2 class="mr-3">-</h2>
+        </div>
 
-        <h2 class="bg-secondary text-white mt-5">Last Minute</h2>
-        <div class="row ">
+        <div class="row mt-5">
             <div class="col-6 col-lg-4">
                 <div class="card h-100">
                     <img src="https://render.fineartamerica.com/images/rendered/default/greeting-card/images-medium/montserrat-monastery-panoramic-mountain-view-blue-sky-near-barcelona-spain-john-a-shiron.jpg?&targetx=0&targety=-12&imagewidth=700&imageheight=525&modelwidth=700&modelheight=500&backgroundcolor=4A92F3&orientation=0" class="card-img-top" alt="Montserrat">
@@ -218,7 +245,7 @@
                         <h5 class="card-title">Montserrat</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
-                        <small class="text-muted">Soemthing</small>
+                        <small class="text-muted">Something</small>
                     </div>
                 </div>
             </div>
@@ -249,31 +276,96 @@
         
 
         <!-- Testimonials -->
-        <h2 class="bg-secondary text-white mt-5">Testimonials</h2>
+        <div class="bg-secondary text-white mt-5 d-flex justify-content-between">
+            <h2 class="ml-3" >Testimonials</h2>
+            <h2 class="mr-3">-</h2>
+        </div>
+        
+
+        <div class="row mt-5">
+            <div class="col-12 col-lg-3">
+                <img src="https://webstockreview.net/images/manager-clipart-general-manager-3.png" alt="" style="max-width: 20vh" class="img-fluid w-100">
+            </div>
             
+                <div class="col-12 col-lg-9 text-sm-center text-lg-left">
+                    <div>
+                        <h4>User 1</h4>
+                        <p> Good service </p>
+                        <p class="text-muted">verified user</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 col-lg-3">
+                <img src="https://webstockreview.net/images/manager-clipart-general-manager-3.png" alt="" style="max-width: 20vh" class="img-fluid w-100">
+            </div>
+            
+                <div class="col-12 col-lg-9 text-sm-center text-lg-left">
+                    <div>
+                        <h4>User 1</h4>
+                        <p> Good service </p>
+                        <p class="text-muted">verified user</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 col-lg-3">
+                <img src="https://webstockreview.net/images/manager-clipart-general-manager-3.png" alt="" style="max-width: 20vh" class="img-fluid w-100">
+            </div>
+          
+                <div class="col-12 col-lg-9 text-sm-center text-lg-left">
+                    <div>
+                        <h4>User 1</h4>
+                        <p> Good service </p>
+                        <p class="text-muted">verified user</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 col-lg-3">
+                <img src="https://webstockreview.net/images/manager-clipart-general-manager-3.png" alt="" style="max-width: 20vh" class="img-fluid w-100">
+            </div>
+                <div class="col-12 col-lg-9 text-sm-center text-lg-left">
+                    <div>
+                        <h4>User 1</h4>
+                        <p> Good service </p>
+                        <p class="text-muted">verified user</p>
+                    </div>
+            </div>
+        </div>
             
            
           
         
+
+        <footer class="mt-5 ">
+
+            <div class="row mt-5">
+                <div class="col-12 col-lg-3">
+                    <img src="asset\honestlogo2.png" alt="honest logo" style="width:20vh">
+                </div>
+                <div class="col-12 col-lg-6">
+                        <div>
+                            <h5>Honest Travel Agency</h5>
+                            <p class="par">
+                                Eschersheimer Landstrasse 442 <br>
+                                Frankfurt am Main <br>
+                                60433 <br>
+                                Germany <br>
+                            </p> 
+                        </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <button class="btn btn-primary">Contact Us</button>
+                </div>
+            </div>
+        </footer>
     </div>
 
-    <!-- <footer>
-           
-        <img src="asset\honestlogo2.png" alt="honest logo" style="width:20vh">
     
-      <p>
-        Honest Travel Agency <br>
-        Eschersheimer Landstrasse 442 <br>
-        Frankfurt am Main <br>
-        60433 <br>
-        Germany <br>
-        </p> 
- 
-   
-    <button class="btn btn-primary">Contact Us</button>
-   
-</div>
-</footer> -->
 
     
     

@@ -1,10 +1,46 @@
-#top-banner{
-    font-family: 'Noto Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+
+
+*{
+    font-family:'Nunito Sans', sans-serif !important;
 }
 
-h5{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+/* banner */
+
+.banner{
+    height:60vh;
+    width: 100%;
+    background: url(https://redmondspeech.com/wp-content/uploads/2018/01/Dark-Overlay.png),url(https://www.purevacations.com/wp-content/uploads/2020/12/5-Places-to-Visit-in-Japan.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
 }
+
+.banner .info{
+    margin-top: 15%;
+    
+}
+
+.banner .info h1{
+    font-size: 2.5em;
+    font-weight: 700;
+    color:#fff;
+    letter-spacing: 1px;
+    
+}
+
+.banner .info p{
+    font-size: 2em;
+    font-weight: 500;
+    color:#fff;
+ 
+}
+
+
+
+/* carousel testimonials */
 
 .col-center{
     margin: 0 auto;
@@ -88,8 +124,13 @@ h5{
 }
 
 
+/* footer */
 footer{
     background-color: #555;
     color:white;
-    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+footer h5{
+    letter-spacing:2px;
 }

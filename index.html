@@ -16,17 +16,13 @@
     <link rel="stylesheet" href="style.css">
 
     <title>Honest Travel Agency</title>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
-    </style>
   </head>
 
   <body>
 
     <!-- nav -->
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">
         <img src="asset\honest-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Honest Travel Agency
@@ -44,15 +40,15 @@
                       Deals
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Deals of the week</a>
-                        <a class="dropdown-item" href="#">Welcome summer!</a>
-                        <a class="dropdown-item" href="#">Deal of the day</a>
-                        <a class="dropdown-item" href="#">Last Minute</a>
+                        <a class="dropdown-item" href="#dealWeek">Deals of the week</a>
+                        <a class="dropdown-item" href="#welcomeSummer">Welcome summer!</a>
+                        <a class="dropdown-item" href="#dealDay">Deal of the day</a>
+                        <a class="dropdown-item" href="#lastMinute">Last Minute</a>
                     </div>
                 </li>  
               
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
 
                 <li class="nav-item active">
@@ -68,11 +64,17 @@
 
     </nav>
 
-    <!-- container -->
+    <!-- banner -->
 
-    <div  class="container mt-5 mb-5">
+    <div  class="container-fluid banner mb-5">
+        <div class="row">
+            <div class="info col-md-6 offset-md-3">
+                <h1 >Travel in ease and peace with us</h1>
+                <p >No hidden cost, no surprise, what we offer is what you get</p>
+            </div>
+        </div>
        
-            <div class="card card-image" style="background-image: url(https://www.purevacations.com/wp-content/uploads/2020/12/5-Places-to-Visit-in-Japan.jpg);">
+            <!-- <div class="card card-image shadow-lg" style="background-image: url(https://www.purevacations.com/wp-content/uploads/2020/12/5-Places-to-Visit-in-Japan.jpg);">
                 <div class="text-white py-5 px-4">
                 <div id="top-banner" class="ml-auto">
         
@@ -82,33 +84,42 @@
             
                 </div>
                 </div>
-            </div>
+            </div> -->
  
 
     </div>
 
-
-
     <div class="container mt-5 mb-5">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro harum qui voluptatibus commodi consequuntur. Pariatur nobis harum magnam deleniti, earum modi ipsum temporibus quas architecto maxime eveniet facilis consequuntur alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ex placeat at doloribus iusto omnis rem. Eius vitae sapiente delectus, est eaque voluptate nobis, porro dolor id placeat perferendis ea.</p>
+        
+    </div>
+
+    <!-- deals of the week -->
+
+    <div id="dealWeek" class="container mt-5 mb-5">
 
      
         <div class="border-bottom border-light border-top-0 mt-5 d-flex justify-content-between shadow title">
-            <h2 class="ml-3" >Deals of the week</h2>
-            <h2 class="mr-3"><i class="bi bi-dash-lg"></i></h2>
+            <h2 class="ml-3 pt-2" >Deals of the week</h2>
+            <a data-toggle="collapse" href="#dealWeekCollapse" role="button" aria-expanded="false" aria-controls="dealWeekCollapse">
+                <h2 class="mr-3 pt-2"><i class="bi bi-dash-lg"></i></h2>
+            </a>
         </div>
         
 
-        <div class="row mt-5">
+        <div id="dealWeekCollapse" class="show row mt-5">
 
             <div class="col-6 col-xl-3">
                 <div class="card mb-4 shadow-sm">
                     <img src="asset\SK.jpg" class="card-img-top" alt="South Korea">
                     <div class="card-body">
                         <h5 class="card-title">South Korea</h5>
-                        <!-- <small class="text-muted">Something</small> -->
-                        <button type="button" class="btn btn-outline-secondary mt-2 mx-auto">
-                            Details
-                        </button>
+                        <small class="text-muted">Lorem ipsum dolor sit</small>
+                        <div>
+                            <button type="button" class="btn btn-outline-secondary mt-2 mx-auto">
+                                Details
+                            </button>
+                        </div>
                     </div>
 
                     
@@ -120,10 +131,12 @@
                     <img src="asset\norway.jpg" class="card-img-top" alt="norway">
                     <div class="card-body">
                         <h5 class="card-title">Norway</h5>
-                        <!-- <small class="text-muted">Something</small> -->
-                        <button type="button" class="btn btn-outline-secondary mt-2 mx-auto">
-                            Details
-                        </button>
+                        <small class="text-muted">Lorem ipsum dolor sit</small>
+                        <div>
+                            <button type="button" class="btn btn-outline-secondary mt-2 mx-auto">
+                                Details
+                            </button>
+                        </div>
                     </div>
 
                 </div>
@@ -134,10 +147,12 @@
                     <img src="asset\NZ.jpg" class="card-img-top" alt="New Zealand">
                     <div class="card-body">
                         <h5 class="card-title">New Zealand</h5>
-                        <!-- <small class="text-muted">Something</small> -->
+                        <small class="text-muted">Lorem ipsum dolor sit</small>
+                        <div>
                         <button type="button" class="btn btn-outline-secondary mt-2 mx-auto">
                             Details
                         </button>
+                        </div>
                     </div>
 
                 </div>
@@ -148,29 +163,36 @@
                     <img src="asset\kyoto.jpg" class="card-img-top" alt="Japan">
                     <div class="card-body">
                         <h5 class="card-title">Japan</h5>
-                        <!-- <small class="text-muted">Something</small> -->
-                        <button type="button" class="btn btn-outline-secondary mt-2 mx-auto">
-                            Details
-                        </button>
+                        <small class="text-muted">Lorem ipsum dolor sit</small>
+                        <div>
+                            <button type="button" class="btn btn-outline-secondary mt-2 mx-auto">
+                                Details
+                            </button>
+                        </div>
                     </div>
 
                 </div>
             </div>
 
         </div>
+    </div>   
         
 
 
 
         <!-- welcome summer -->
+
+    <div id="welcomeSummer" class="container mt-5 mb-5">    
         <div class="border-bottom border-light border-top-0 mt-5 d-flex justify-content-between shadow title">
-            <h2 class="ml-3" >Welcome Summer!</h2>
-            <h2 class="mr-3"><i class="bi bi-dash-lg"></i></h2>
+            <h2 class="ml-3 pt-2" >Welcome Summer!</h2>
+            <a data-toggle="collapse" href="#welcomeSummerCollapse" role="button" aria-expanded="false" aria-controls="welcomeSummerCollapse">
+                <h2 class="mr-3 pt-2"><i class="bi bi-dash-lg"></i></h2>
+            </a>
         </div>
         
-        <div class="row mt-5">
+        <div id="welcomeSummerCollapse" class="show row mt-5">
             <div class="col-6 col-lg-2">
-                <div class="card h-100">
+                <div class="card mb-4 shadow-lg">
                     <img src="https://www.libertytravel.com/sites/default/files/styles/full_size/public/LG5516.2%20LT%20WebB_Mex2.jpg?itok=H5mGn3bA" class="card-img-top" alt="Cancun">
                     <div class="card-body">
                         <h5 class="card-title">Cancun</h5>
@@ -179,7 +201,7 @@
                 </div>
             </div>
             <div class="col-6 col-lg-2">
-                <div class="card h-100">
+                <div class="card mb-4 shadow-lg">
                     <img src="https://www.libertytravel.com/sites/default/files/styles/full_size/public/LG5516.2%20LT%20WebB_Carib2.jpg?itok=B_-_S0K5" class="card-img-top" alt="punta cana">
                     <div class="card-body">
                         <h5 class="card-title">Punta Cana</h5>
@@ -188,7 +210,7 @@
                 </div>
             </div>
             <div class="col-6 col-lg-2">
-                <div class="card h-100">
+                <div class="card mb-4 shadow-lg">
                     <img src="https://www.libertytravel.com/sites/default/files/styles/full_size/public/LT718025605-co_op-HP_472x472-spain.jpg?itok=AkGVmujF" class="card-img-top" alt="Lousiana">
                     <div class="card-body">
                         <h5 class="card-title">Lousiana</h5>
@@ -197,7 +219,7 @@
                 </div>
             </div>
             <div class="col-6 col-lg-2">
-                <div class="card h-100">
+                <div class="card mb-4 shadow-lg">
                     <img src="https://lifegems.co.uk/wp-content/uploads/2020/05/baliV2-1.jpg" class="card-img-top" alt="Bali">
                     <div class="card-body">
                         <h5 class="card-title">Bali</h5>
@@ -206,7 +228,7 @@
                 </div>
             </div>
             <div class="col-6 col-lg-2">
-                <div class="card h-100">
+                <div class="card mb-4 shadow-lg">
                     <img src="https://assets.vogue.com/photos/5b491d3abc86855b39bbe245/master/pass/00-promo-image-making-the-case-for-a-sardinian-lifestyle.jpg" class="card-img-top" alt="Sardinia">
                     <div class="card-body">
                         <h5 class="card-title">Sardinia</h5>
@@ -215,7 +237,7 @@
                 </div>
             </div>
             <div class="col-6 col-lg-2">
-                <div class="card h-100">
+                <div class="card mb-4 shadow-lg">
                     <img src="https://www.visitdubai.com/-/media/gathercontent/poi/b/burj-al-arab/fallback-image/burj-al-arab-dtcm-03.jpg?rev=6f23fe2f54564a72b4c860cbcbfa66b4&cx=0.5&cy=0.5&cw=397&ch=397" alt="Dubai">
                     <div class="card-body">
                         <h5 class="card-title">Dubai</h5>
@@ -224,41 +246,48 @@
                 </div>
             </div>
         </div>
+    </div>
 
         <!-- deals of the day -->
+    <div id="dealDay" class="container mt-5 mb-5 ">
         <div class="border-bottom border-light border-top-0 mt-5 d-flex justify-content-between shadow title">
-            <h2 class="ml-3" >Deals of the day</h2>
-            <h2 class="mr-3"><i class="bi bi-dash-lg"></i></h2>
+            <h2 class="ml-3 pt-2" >Deals of the day</h2>
+            <a data-toggle="collapse" href="#dealDayCollapse" role="button" aria-expanded="false" aria-controls="dealDayCollapse">
+                <h2 class="mr-3 pt-2"><i class="bi bi-dash-lg"></i></h2>
+            </a>
         </div>
 
-        <div class="row mt-5">
-            <div class="col-12 col-lg-9">
-                <img src="https://www.urlaubstracker.at/wp-content/uploads/2019/08/lombok-vulkan-rinjani-krater.jpg" alt="lombok/rinjani"
-                    class="img-fluid w-100 mb-4 mb-sm-0 mt-sm-4 mt-lg-0">
-            </div>
-            <div class="col-12 col-lg-3 text-sm-center text-lg-left">
-                <div>
-                    <h1>Lombok</h1>
-                    <p>Want to book a vacation to Lombok? Whether you're off for a romantic vacation, family trip, or an all-inclusive holiday, Lombok vacation packages on us make planning your trip simple and affordable.</p>
-                    <p class="text-primary">€ 800,- pp</p>
-                    <p class="text-muted">3 days at 3 stars hotel - brekafast included</p>
-                    <button type="button" class="btn btn-primary mt-2 mx-auto">
-                        Book now
-                    </button>
+        <div id="dealDayCollapse" class="show row mt-5">
+                <div class="col-12 col-lg-9">
+                    <img src="https://www.urlaubstracker.at/wp-content/uploads/2019/08/lombok-vulkan-rinjani-krater.jpg" alt="lombok/rinjani"
+                        class="img-fluid w-100 mb-4 mb-sm-0 mt-sm-4 mt-lg-0">
                 </div>
-            </div>
+                <div class="col-12 col-lg-3 text-sm-center text-lg-left">
+                    <div>
+                        <h1>Lombok</h1>
+                        <p>Want to book a vacation to Lombok? Whether you're off for a romantic vacation, family trip, or an all-inclusive holiday, Lombok vacation packages on us make planning your trip simple and affordable.</p>
+                        <p class="text-primary">€ 800,- pp</p>
+                        <p class="text-muted">3 days at 3 stars hotel - brekafast included</p>
+                        <button type="button" class="btn btn-primary mt-2 mx-auto">
+                                Book now
+                        </button>    
+                    </div>
+                </div>
         </div>
-
-
+    </div>
+    
         <!-- Last Minute -->
+    <div id="lastMinute" class="container mt-5 mb-5">
         <div class="border-bottom border-light border-top-0 mt-5 d-flex justify-content-between shadow title">
-            <h2 class="ml-3" >Last Minute</h2>
-            <h2 class="mr-3"><i class="bi bi-dash-lg"></i></h2>
+            <h2 class="ml-3 pt-2" >Last Minute</h2>
+            <a data-toggle="collapse" href="#lastMinuteCollapse" role="button" aria-expanded="false" aria-controls="lastMinuteCollapse">
+                <h2 class="mr-3 pt-2"><i class="bi bi-dash-lg"></i></h2>
+            </a>
         </div>
 
-        <div class="row mt-5">
+        <div id="lastMinuteCollapse" class="show row mt-5">
             <div class="col-6 col-lg-4">
-                <div class="card h-100">
+                <div class="card mb-4 shadow-sm">
                     <img src="https://render.fineartamerica.com/images/rendered/default/greeting-card/images-medium/montserrat-monastery-panoramic-mountain-view-blue-sky-near-barcelona-spain-john-a-shiron.jpg?&targetx=0&targety=-12&imagewidth=700&imageheight=525&modelwidth=700&modelheight=500&backgroundcolor=4A92F3&orientation=0" class="card-img-top" alt="Montserrat">
                     <div class="card-body">
                         <h5 class="card-title">Montserrat</h5>
@@ -270,7 +299,7 @@
             </div>
             
             <div class="col-6 col-lg-4">
-                <div class="card h-100">
+                <div class="card mb-4 shadow-sm">
                     <img src="https://render.fineartamerica.com/images/rendered/default/greeting-card/images/artworkimages/medium/1/majestic-cliffs-of-moher-co-clare-ireland-pierre-leclerc.jpg?&targetx=-25&targety=0&imagewidth=750&imageheight=500&modelwidth=700&modelheight=500&backgroundcolor=777982&orientation=0" class="card-img-top" alt="Cliffs of Moher">
                     <div class="card-body">
                         <h5 class="card-title">Cliffs of Moher</h5>
@@ -281,7 +310,7 @@
                 </div>
             </div>
             <div class="col-6 col-lg-4">
-                <div class="card h-100">
+                <div class="card mb-4 shadow-sm">
                     <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/fd/32/antalya-province.jpg?w=700&h=500&s=1" class="card-img-top" alt="Antalya">
                     <div class="card-body">
                         <h5 class="card-title">Antalya</h5>
@@ -291,17 +320,22 @@
                     </div>
                 </div>
             </div>
-            </div>
-        
-
-        <!-- Testimonials -->
-
-       <div class="border-bottom border-light border-top-0 mt-5 d-flex justify-content-between shadow title">
-            <h2 class="ml-3" >Testimonials</h2>
-            <h2 class="mr-3"><i class="bi bi-dash-lg"></i></h2>
         </div>
         
-            <div class="row mt-5">
+        
+    </div>
+
+
+        <!-- Testimonials -->
+<div class="container mt-5 mb-5">
+       <div class="border-bottom border-light border-top-0 mt-5 d-flex justify-content-between shadow title">
+            <h2 class="ml-3 pt-2" >Testimonials</h2>
+            <a data-toggle="collapse" href="#testimonialCollapse" role="button" aria-expanded="false" aria-controls="testimonialCollapse">
+                <h2 class="mr-3 pt-2"><i class="bi bi-dash-lg"></i></h2>
+            </a>
+        </div>
+        
+            <div id="testimonialCollapse" class="show row mt-5">
                 <div class="col-center col-md-8 m-auto">
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
@@ -346,7 +380,7 @@
                 </div>
             </div>
 
-    </div>
+</div>
 
 
 <!-- Footer -->
@@ -359,7 +393,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate
             esse quasi.</p>
 
-            <button class="btn btn-primary">Contact Us</button>
+            <button id="contact" class="btn btn-primary">Contact Us</button>
   
         </div>
   

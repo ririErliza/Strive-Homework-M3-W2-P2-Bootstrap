@@ -134,3 +134,34 @@ footer{
 footer h5{
     letter-spacing:2px;
 }
+
+/* button to top */
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color:#0275d8; 
+    color: white; 
+    cursor: pointer; 
+    padding: 5px; 
+    border-radius: 5%; 
+    font-size: 23px;
+    
+    }
+
+    #myBtn:hover {
+    background-color: #f7f7f7;
+    color:#0275d8;
+    }
+
+    ul li button{
+      border-radius: 20px;
+      border-color: rgb(34, 26, 26);
+      background-color: rgb(34, 26, 26);
+      color: white;
+    }
